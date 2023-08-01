@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>post_details</title>
+</head>
+<body>
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.text }}</p>
+  <ul>
+    {% for comment in comments %}
+      <li>{{comment.text}} -> {{ comment.created_time }}</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
